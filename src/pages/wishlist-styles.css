@@ -1,0 +1,27 @@
+.wishlist-card {
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+}
+
+.wishlist-card__image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background: #f3f4f6;
+}
+
+.wishlist-card__remove {
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.wishlist-card__remove:hover {
+  color: #dc2626;
+}
+
+@media (max-width: 575.98px) {
+  .wishlist-card__image {
+    height: 200px;
+  }
+}
