@@ -5,14 +5,14 @@ const wishlistItems = [
     id: 1,
     name: "SmartPhone",
     price: 89.99,
-    image: "/smartphone.jpg",
+    image: "./smartphone.jpg",
     inStock: true,
   },
   {
     id: 2,
     name: "Laptop",
     price: 499.99,
-    image: "/laptop.jpg",
+    image: "./laptop.jpg",
     inStock: false,
   },
 ];
