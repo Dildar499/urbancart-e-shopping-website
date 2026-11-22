@@ -1,0 +1,214 @@
+.shop-hero {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Hero Content */
+.hero-content {
+    padding: 20px 10px;
+}
+
+.hero-content h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.2;
+}
+
+.hero-content p {
+    line-height: 1.6;
+}
+
+/* Hero Image */
+.image-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-div img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+/* Buttons */
+.hero-buttons button {
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+    .shop-hero {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .hero-content {
+        text-align: center;
+        padding: 10px 5px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .image-div img {
+        max-height: 320px;
+    }
+}
+.cards{
+   
+    height: 300px;
+    width: 100%;
+}
+.card{
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 20px;
+}
+.category-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.content{
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+.content-Area{
+    margin: 20px;
+}
+.button{
+    margin: 60px;
+}
+.button button{
+    padding: 15px 25px;
+    border-radius: 20px;
+    
+    color: black;
+}
+.card1 {
+  background-color: #131129;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.card1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25) !important;
+}
+
+.card1 h5 {
+  color: black;
+  font-size: 17px;
+}
+
+.card1 p {
+  font-size: 13px;
+}
+
+.card1 svg {
+  flex-shrink: 0;
+}
+
+@media (max-width: 576px) {
+  .card1 .card-body {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .card1 h5 {
+    font-size: 15px;
+  }
+
+  .card1 .card-body {
+    gap: 10px !important;
+    padding: 15px 10px;
+  }
+
+  .card1 svg {
+    font-size: 30px;
+  }
+}
+.newsLetter {
+  background-color: hsl(202, 29%, 23%);
+  padding: 40px 15px;
+  width: 100%;
+}
+.textContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+.textContent input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 15px;
+  border: 1px solid #777;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.textContent input:focus {
+  border-color: #06181e;
+}
+
+.textContent button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background-color: lightblue;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+.textContent button:hover {
+  background-color: blue;
+  transition: 1s ease-in-out;
+}
+@media (min-width: 576px) {
+
+  .newsLetter {
+    padding: 50px 30px;
+  }
+}
+
+
+
+/* =========================
+   LARGE (992px and up)
+========================= */
+@media (min-width: 992px) {
+  .newsLetter {
+    padding: 50px;
+  }
+}
+.innnn input:focus{
+  outline: none;
+  border: 2px solid blue;
+  box-shadow: none;
+
+}
+.innnn input{
+  padding: 10px 10px;
+  border-radius: 20px;
+  border: 1px solid blue;
+}

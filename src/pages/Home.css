@@ -1,0 +1,317 @@
+
+/* ==============================
+   GLOBAL HOME PAGE
+============================== */
+
+.home-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.home-page .container {
+  max-width: 1320px;
+}
+
+/* ==============================
+   HERO CAROUSEL
+============================== */
+
+.slider-img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.custom-caption {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: auto;
+  bottom: auto;
+  transform: translateY(-50%);
+  width: 45%;
+  text-align: left;
+}
+
+.custom-caption h5 {
+  font-size: clamp(32px, 4vw, 55px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.custom-caption p {
+  font-size: clamp(14px, 1.4vw, 18px);
+  margin-bottom: 25px;
+}
+
+.slider-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.slider-buttons .btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* ==============================
+   BENEFITS SECTION
+============================== */
+
+.main-div {
+  row-gap: 25px;
+}
+
+.main-div > div > div {
+  min-height: 75px;
+}
+
+.main-div h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.main-div p {
+  font-size: 14px;
+}
+
+/* ==============================
+   FEATURED PRODUCTS HEADING
+============================== */
+
+.feature {
+  gap: 20px;
+}
+
+.feature h2 {
+  font-size: 30px;
+}
+
+.feature button {
+  white-space: nowrap;
+  color: black;
+  border: 1px solid blue;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px 20px;
+
+}
+
+/* ==============================
+   PRODUCT CARDS
+============================== */
+
+.home-products .card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.home-products .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+   cursor: pointer;
+}
+
+.home-products .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-products .card-body h5 {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home-products .card-body p {
+  font-size: 14px;
+}
+
+.home-products .card-body button {
+  margin-top: auto;
+}
+
+/* ==============================
+   TABLET RESPONSIVENESS
+============================== */
+
+@media (max-width: 991px) {
+
+  .slider-img {
+    height: 430px;
+  }
+
+  .custom-caption {
+    left: 8%;
+    width: 55%;
+  }
+
+  .custom-caption h5 {
+    margin-bottom: 15px;
+  }
+
+  .custom-caption p {
+    margin-bottom: 18px;
+  }
+
+  .main-div {
+    text-align: left;
+  }
+
+  .feature h2 {
+    font-size: 26px;
+  }
+
+}
+
+/* ==============================
+   MOBILE RESPONSIVENESS
+============================== */
+
+@media (max-width: 576px) {
+
+  /* Carousel */
+
+  .slider-img {
+    height: 350px;
+    object-position: center;
+  }
+
+  .custom-caption {
+    left: 8%;
+    right: 8%;
+    width: 84%;
+    text-align: center;
+  }
+
+  .custom-caption h5 {
+    font-size: 27px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .custom-caption p {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .slider-buttons {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .slider-buttons .btn {
+    font-size: 11px;
+    padding: 8px 12px;
+  }
+
+  /* Benefits */
+
+  .main-div {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .main-div > div > div {
+    justify-content: flex-start !important;
+    padding: 10px 15px;
+  }
+
+  .main-div h5 {
+    font-size: 16px;
+  }
+
+  .main-div p {
+    font-size: 12px;
+  }
+
+  .main-div svg {
+    font-size: 2.2rem;
+  }
+
+  /* Featured heading */
+
+  .feature {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 15px;
+  }
+
+  .feature h2 {
+    font-size: 24px;
+  }
+
+  .feature button {
+    font-size: 13px;
+    padding: 9px 14px;
+  }
+
+  /* Product cards */
+
+  .home-products {
+    margin-top: 25px !important;
+  }
+
+  .home-products .card img {
+    height: 180px;
+  }
+
+  .home-products .card-body h5 {
+    font-size: 16px;
+  }
+
+  .home-products .card-body p {
+    font-size: 13px;
+  }
+
+  .home-products .card-body button {
+    font-size: 13px;
+  }
+
+}
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 375px) {
+
+  .slider-img {
+    height: 300px;
+  }
+
+  .custom-caption h5 {
+    font-size: 23px;
+  }
+
+  .custom-caption p {
+    font-size: 11px;
+  }
+
+  .slider-buttons .btn {
+    font-size: 10px;
+    padding: 7px 9px;
+  }
+
+  .feature h2 {
+    font-size: 21px;
+  }
+
+  .main-div h5 {
+    font-size: 15px;
+  }
+
+  .main-div p {
+    font-size: 11px;
+  }
+
+}

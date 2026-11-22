@@ -1,0 +1,64 @@
+.urbancart-footer {
+  background-color: #131129;
+  color: #f8fafc;
+}
+
+.urbancart-footer__brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.urbancart-footer__brand:hover,
+.urbancart-footer__link:hover {
+  color: #60a5fa;
+}
+
+.urbancart-footer__description,
+.urbancart-footer__contact,
+.urbancart-footer__fineprint {
+  color: #a1a1aa;
+  line-height: 1.7;
+}
+
+.urbancart-footer__heading {
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.urbancart-footer__link {
+  color: #a1a1aa;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.urbancart-footer__contact {
+  display: grid;
+  gap: 0.5rem;
+  font-style: normal;
+  overflow-wrap: anywhere;
+}
+
+.urbancart-footer__contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.urbancart-footer__contact a:hover {
+  color: #60a5fa;
+}
+
+.urbancart-footer__divider {
+  margin: 2rem 0 1.25rem;
+  border-color: rgba(255, 255, 255, 0.15);
+  opacity: 1;
+}
+
+@media (max-width: 575.98px) {
+  .urbancart-footer__fineprint {
+    font-size: 0.875rem;
+  }
+}

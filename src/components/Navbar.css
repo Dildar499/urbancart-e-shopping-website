@@ -1,0 +1,141 @@
+/* Logo */
+.navbar-brand-group {
+    gap: 8px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Search field */
+.input-field {
+    width: 220px;
+}
+
+.input-field .form-control {
+    border-radius: 25px;
+    box-shadow: none;
+    outline: none;
+}
+
+.input-field .form-control:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+}
+
+/* Right side actions */
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Icon buttons */
+.iconsBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.iconsBtn:hover {
+    background-color: rgb(66, 66, 215);
+    color: white;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .navbar-collapse {
+        align-items: center;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .navbar-actions {
+        flex-direction: row;
+    }
+}
+
+/* Mobile and tablet */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        flex-basis: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .navbar-actions {
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 10px;
+        gap: 15px;
+    }
+
+    .input-field {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .navbar-actions .iconsBtn {
+        display: inline-flex;
+    }
+
+    /* Keep both icons in one row */
+    .navbar-actions {
+        flex-wrap: wrap;
+    }
+}
+
+/* Very small mobile screens */
+@media (max-width: 360px) {
+    .navbar-brand {
+        font-size: 19px !important;
+    }
+
+    .logo-link svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar-toggler {
+        padding: 5px 8px;
+    }
+}
