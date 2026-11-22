@@ -251,7 +251,7 @@ function Home() {
           >
             <div className="card h-100 border-0 shadow-sm">
               <img
-                src="./public/smartphone.jpg"
+                src="./smartphone.jpg"
                 className="card-img-top p-3"
                 style={{ height: "200px", objectFit: "contain" }}
                 onClick={() => {
@@ -294,7 +294,7 @@ function Home() {
           >
             <div className="card h-100 border-0 shadow-sm">
               <img
-                src="./public/laptop.jpg"
+                src="./laptop.jpg"
                 className="card-img-top p-3"
                 style={{ height: "200px", objectFit: "contain" }}
                 onClick={() => {
@@ -337,7 +337,7 @@ function Home() {
           >
             <div className="card h-100 border-0 shadow-sm">
               <img
-                src="./public/accessories.webp"
+                src="./accessories.webp"
                 className="card-img-top p-3"
                 style={{ height: "200px", objectFit: "contain" }}
                 onClick={() => {
@@ -380,7 +380,7 @@ function Home() {
           >
             <div className="card h-100 border-0 shadow-sm">
               <img
-                src="./public/menShirt.webp"
+                src="./menShirt.webp"
                 className="card-img-top p-3"
                 style={{ height: "200px", objectFit: "contain" }}
                 onClick={() => {
