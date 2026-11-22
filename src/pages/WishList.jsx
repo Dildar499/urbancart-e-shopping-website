@@ -1,4 +1,4 @@
-import "./public/WishList.css";
+import "./WishList.css";
 
 const wishlistItems = [
   {
