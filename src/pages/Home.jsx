@@ -251,7 +251,7 @@ function Home() {
           >
             <div className="card h-100 border-0 shadow-sm">
               <img
-                src="./public/watch.jpg"
+                src="./public/smartphone.jpg"
                 className="card-img-top p-3"
                 style={{ height: "200px", objectFit: "contain" }}
                 onClick={() => {
