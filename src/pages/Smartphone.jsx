@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
-function Smartphone() {
+function Smartphone({addToCart}) {
   const [phone, setPhone] = useState([]);
 
   useEffect(() => {
@@ -70,7 +70,9 @@ function Smartphone() {
                       ⭐⭐⭐⭐ {product.rating}
                     </p>
 
-                    <button className="btn btn-primary w-100 mt-auto">
+                    <button className="btn btn-primary w-100 mt-auto" onClick={()=>{
+                      addToCart(product)
+                    }}>
                       Add To Cart
                     </button>
                   </div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 // 
-function Accessories(){
+function Accessories({addToCart}){
     const [accessories , setAccessories] = useState([]);
     useEffect(()=>{
         const Accessories = async ()=>{
@@ -63,9 +63,11 @@ function Accessories(){
                     ⭐⭐⭐⭐ {product.rating}
                   </p>
 
-                  <button className="btn btn-primary w-100 mt-auto">
-                    Add To Cart
-                  </button>
+                  <button className="btn btn-primary w-100 mt-auto" onClick={()=>{
+                      addToCart(product)
+                    }}>
+                      Add To Cart
+                    </button>
                 </div>
               </motion.div>
             </div>

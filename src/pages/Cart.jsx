@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import './Cart.css';
 
 
 function Cart({ cartItems, setCartItems }) {
+  const Navigate = useNavigate();
   const total = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
@@ -99,7 +101,9 @@ function Cart({ cartItems, setCartItems }) {
                 <span>Total</span>
                 <span>${total.toFixed(2)}</span>
               </div>
-              <button className="btn btn-primary w-100 mt-3" type="button">
+              <button className="btn btn-primary w-100 mt-3" type="button" onClick={()=>{
+                Navigate(`/shop`);
+              }}>
                 Continue to checkout
               </button>
             </div>

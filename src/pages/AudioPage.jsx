@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { motion } from "motion/react";
-function AudioPage() {
+function AudioPage({addToCart}) {
   const [allProducts, setAllProducts] = useState([]);
 
   useEffect(() => {
@@ -88,7 +88,9 @@ function AudioPage() {
                       ⭐⭐⭐⭐ {product.rating}
                     </p>
 
-                    <button className="btn btn-primary w-100 mt-auto">
+                    <button className="btn btn-primary w-100 mt-auto" onClick={()=>{
+                      addToCart(product)
+                    }}>
                       Add To Cart
                     </button>
                   </div>

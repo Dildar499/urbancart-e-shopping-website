@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 
-function Laptop(){
+function Laptop({addToCart}){
     const [laptops , setLaptops] = useState([]);
 
     useEffect(()=>{
@@ -65,7 +65,9 @@ function Laptop(){
                       ⭐⭐⭐⭐ {product.rating}
                     </p>
 
-                    <button className="btn btn-primary w-100 mt-auto">
+                    <button className="btn btn-primary w-100 mt-auto" onClick={()=>{
+                      addToCart(product)
+                    }}>
                       Add To Cart
                     </button>
                   </div>
