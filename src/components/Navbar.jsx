@@ -152,12 +152,14 @@ function Navbar({ search, setSearch,cartCount  }) {
                 strokeWidth={0.75}
                 onClick={() => {
                   Navigate("/createAccountPage");
+                  closeNavbar;
+                 
                 }}
               />
             </button>
 
-            <Link to="/cart" className="iconsBtn" aria-label="Shopping cart">
-              <ShoppingCart size={30} strokeWidth={0.75} />
+            <Link to="/cart" className="iconsBtn" aria-label="Shopping cart" >
+              <ShoppingCart size={30} strokeWidth={0.75}  onClick={closeNavbar}/>
               {cartCount > 0 && (
                 <span className="badge text-bg-primary">{cartCount}</span>
               )}
