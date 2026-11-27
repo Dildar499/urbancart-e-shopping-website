@@ -18,7 +18,12 @@
   border-color: #2563eb;
   box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.15);
 }
-
+.auth-link {
+    color: #2563eb;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
 .login-card .btn {
   min-height: 44px;
 }

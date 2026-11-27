@@ -40,7 +40,7 @@ function CreateAccount() {
     /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; // Password REGEX Validation
 
   // Form validation Process
-  const handleForm = (e) => {
+  const handleForm = async (e) => {
     e.preventDefault();
 
     //clear error message fields first
@@ -77,12 +77,41 @@ function CreateAccount() {
       setConfirmError("Password is not Matched!");
       return;
     }
+      try {
+    const res = await fetch(
+      "http://localhost:5000/api/users/createAccountPage",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: name.trim(),
+          email: email.trim(),
+          password,
+          confirmPassword: confirm,
+        }),
+      }
+    );
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      setError(data.message || "Something went wrong");
+      return;
+    }
 
     setName("");
     setEmail("");
     setPassword("");
     setConfirm("");
-    navigate("/loginpage", { state: { message: "Account created successfully!" } })
+
+    navigate("/loginpage", {
+      state: { message: "Account created successfully!" },
+    });
+  } catch {
+    setError("Could not reach the server. Is the backend running?");
+  }
+
+   
   };
 
   const handleNameError = () => {
@@ -130,6 +159,7 @@ function CreateAccount() {
     } else {
       setConfirmError("");
     }
+    
   };
   return (
     <>

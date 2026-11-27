@@ -151,7 +151,7 @@ function Navbar({ search, setSearch,cartCount  }) {
                 size={30}
                 strokeWidth={0.75}
                 onClick={() => {
-                  Navigate("/createAccountPage");
+                  Navigate("/loginpage");
                   closeNavbar;
                  
                 }}
