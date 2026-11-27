@@ -38,7 +38,6 @@ function App() {
     <>
       <BrowserRouter>
         <ScrollToTop />
-
         <Navbar
           search={search}
           setSearch={setSearch}
@@ -47,7 +46,6 @@ function App() {
             0,
           )}
         />
-
         <Routes>
           <Route
             path="/home"
@@ -61,7 +59,7 @@ function App() {
           ></Route>
           <Route
             path="/shop"
-            element={<Shop search={search} addToCart={addToCart} />}
+            element={<Shop search={search} setSearch={setSearch} addToCart={addToCart} />}
           ></Route>
           <Route path="/smartphone" element={<Smartphone addToCart={addToCart}/>}></Route>
           <Route path="/laptop" element={<Laptop addToCart={addToCart} />}></Route>

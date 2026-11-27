@@ -146,19 +146,19 @@ function Navbar({ search, setSearch,cartCount  }) {
               className="iconsBtn"
               type="button"
               aria-label="User account"
+              onClick={closeNavbar}
             >
               <UserRound
                 size={30}
                 strokeWidth={0.75}
                 onClick={() => {
-                  Navigate("/loginpage");
-                  closeNavbar;
+                  Navigate("/loginpage")
                  
                 }}
               />
             </button>
 
-            <Link to="/cart" className="iconsBtn" aria-label="Shopping cart" >
+            <Link to="/cart" className="iconsBtn" aria-label="Shopping cart" onClick={closeNavbar}>
               <ShoppingCart size={30} strokeWidth={0.75}  onClick={closeNavbar}/>
               {cartCount > 0 && (
                 <span className="badge text-bg-primary">{cartCount}</span>

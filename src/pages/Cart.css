@@ -19,5 +19,6 @@
 
   .cart-item-quantity {
     min-width: 2.5rem;
+    font-size: 30px;
   }
 }

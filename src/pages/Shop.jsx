@@ -52,6 +52,7 @@ function Shop({ search = "", setSearch, addToCart }) {
         ];
 
         setProducts(allProducts);
+        
       } catch (err) {
         console.log(err.message);
       }
@@ -154,7 +155,7 @@ function Shop({ search = "", setSearch, addToCart }) {
               className="form-control py-2"
               placeholder="Search products..."
               value={search}
-              onChange={(event) => setSearch(event.target.value)}
+              onChange={(e) => setSearch(e.target.value)}
             />
           </div>
         </div>

@@ -19,6 +19,7 @@ function Login() {
       ...pre,
       [name]: value,
     }));
+    setMessage("");
   };
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -51,7 +52,7 @@ function Login() {
       
     } catch {
       setSuccess(false);
-      setMessage("Server Say Connect Nhi Ho Raha");
+      setMessage("Connection Denied");
     } finally {
       setLoading(false);
     }

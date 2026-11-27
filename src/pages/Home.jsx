@@ -57,7 +57,7 @@ function Home() {
                 <span className="text-primary">Tech Life</span>
               </h5>
 
-              <p>Discover the latest accessories from our store.</p>
+              <p className="fw-bold">Discover the latest accessories from our store.</p>
 
               <div className="slider-buttons">
                 <button
@@ -90,7 +90,7 @@ function Home() {
                 <span className="text-primary">Tech Life</span>
               </h5>
 
-              <p>Explore powerful laptops for work and entertainment.</p>
+              <p className="fw-bold">Explore powerful laptops for work and entertainment.</p>
 
               <div className="slider-buttons">
                 <button className="btn btn-primary">Shop Now ➔</button>
@@ -116,7 +116,7 @@ function Home() {
                 <span className="text-primary">Tech Life</span>
               </h5>
 
-              <p>Discover the latest smartphones at UrbanCart.</p>
+              <p className="fw-bold">Discover the latest smartphones at <span className="text-primary">UrbanCart</span>.</p>
 
               <div className="slider-buttons">
                 <button className="btn btn-primary">Shop Now ➔</button>
@@ -153,7 +153,7 @@ function Home() {
         <div className="row gy-4 my-3 pb-4 main-div align-items-center">
           {/* Free Shipping */}
           <div className="col-12 col-sm-6 col-lg-3">
-            <div className="d-flex justify-content-center align-items-center gap-3">
+            <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center text-center text-sm-start gap-2 gap-sm-3">
               <FontAwesomeIcon icon={faTruckFast} size="3x" color="#2563eb" />
               <div>
                 <h5>Free Shipping</h5>
@@ -164,7 +164,7 @@ function Home() {
 
           {/* Secure Payment */}
           <div className="col-12 col-sm-6 col-lg-3">
-            <div className="d-flex justify-content-center align-items-center gap-3">
+            <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center text-center text-sm-start gap-2 gap-sm-3">
               <FontAwesomeIcon
                 icon={faShieldHalved}
                 size="3x"
@@ -179,7 +179,7 @@ function Home() {
 
           {/* Customer Support */}
           <div className="col-12 col-sm-6 col-lg-3">
-            <div className="d-flex justify-content-center align-items-center gap-3">
+            <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center text-center text-sm-start gap-2 gap-sm-3">
               <FontAwesomeIcon icon={faHeadset} size="3x" color="#2563eb" />
               <div>
                 <h5>24/7 Support</h5>
@@ -190,7 +190,7 @@ function Home() {
 
           {/* Easy Returns */}
           <div className="col-12 col-sm-6 col-lg-3">
-            <div className="d-flex justify-content-center align-items-center gap-3">
+            <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center text-center text-sm-start gap-2 gap-sm-3">
               <FontAwesomeIcon
                 icon={faArrowRotateLeft}
                 size="3x"
@@ -205,7 +205,7 @@ function Home() {
         </div>
       </div>
 
-      <p className="container text-primary fs-2 fw-bold">____</p>
+      <p className="container text-center text-sm-start text-primary fs-2 fw-bold">____</p>
 
       <div className="container my-4">
         <div className="row">
